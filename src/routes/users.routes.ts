@@ -1,7 +1,10 @@
 import { Router } from 'express';
-import usersController from '../controllers/users.controller'
+import { UsersController } from '../controllers/users.controller'
+
 const usersRouter = Router();
 
-usersRouter.get('/teste',usersController.GetInit);
+const usersController = new UsersController()
+
+usersRouter.get('/', usersController.create);
 
 export default usersRouter;

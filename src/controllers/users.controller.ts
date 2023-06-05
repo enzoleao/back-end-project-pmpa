@@ -1,9 +1,7 @@
 import {Request, Response } from 'express';
 
-const GetInit =(req: Request, res: Response) => {
-    return res.json("teste");
-};
-
-export default {
-    GetInit
-};
+export class UsersController {
+    async create(req: Request, res: Response): Promise<Response> {
+        return res.json("ok")
+    }
+}
