@@ -1,10 +1,11 @@
 import { Router } from 'express';
-import { ScheduleController } from '../controllers/schedule.controller';
+import schedulesController from '../controllers/schedules.controller';
 
-const scheduleRoutes = Router();
-const scheduleController = new ScheduleController()
+const schedulesRoutes = Router();
 
 
-scheduleRoutes.get('/', scheduleController.create);
 
-export default scheduleRoutes;
+schedulesRoutes.get('/', schedulesController.getAll);
+schedulesRoutes.post('/', schedulesController.create);
+
+export default schedulesRoutes;
