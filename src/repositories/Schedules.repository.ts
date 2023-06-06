@@ -9,4 +9,7 @@ export class SchedulesRepository {
         })
         return response
     }
+    static async getAll():Promise<any> {
+        return await prisma.schedules.findMany()
+    }
 }

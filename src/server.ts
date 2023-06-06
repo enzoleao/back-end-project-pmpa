@@ -4,13 +4,14 @@ import express, { NextFunction, Request, Response } from 'express';
 import Routes from './routes/routes'
 import * as dotenv from 'dotenv'
 import { AppError } from './err/AppError';
+import cors from 'cors'
 dotenv.config()
 const app = express();
 const PORT = process.env.PORT
 
+app.use(cors())
 app.use(express.json())
 app.use(Routes)
-
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
     if (err instanceof AppError) {
