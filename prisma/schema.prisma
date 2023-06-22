@@ -10,23 +10,26 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model Polices {
   id    String     @id @default(uuid())
-  email String  @unique
+  rg String  @unique
   name  String?
-  scheduled Scheduled?
-  password String 
-  createdAt DateTime @default(now()) @map("created_at")
+  battalionId String @unique @map("battalion_id")
+
+  user    Battalions    @relation(fields: [battalionId], references: [id])
 }
 
-model Scheduled {
+model Coint {
   id        String     @id @default(uuid())
-  date DateTime 
-  userSchedule  String @unique
-  user    User    @relation(fields: [userSchedule], references: [id])
+  name String
+  battalions Battalions[]
 }
 
-model Schedules {
+model Battalions {
   id String @id @default(uuid())
-  time DateTime 
+  name String 
+  cointId String @unique @map("coint_id")
+  effective Polices[]
+
+  coint    Coint    @relation(fields: [cointId], references: [id])
 }

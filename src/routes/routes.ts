@@ -1,10 +1,11 @@
 import { Router } from 'express';
-import usersRouter from './users.routes';
-import scheduleRoutes from './schedule.routes';
 
+import cointRoutes from './coint.routes';
+import policesRoutes from './polices.routes'
 const routes = Router();
 
-routes.use('/users', usersRouter);
-routes.use('/schedules', scheduleRoutes)
+
+routes.use('/coint', cointRoutes)
+routes.use('/polices', policesRoutes)
 
 export default routes;
