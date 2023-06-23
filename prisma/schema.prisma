@@ -11,25 +11,26 @@ datasource db {
 }
 
 model Polices {
-  id    String     @id @default(uuid())
+  id    Int     @id @default(autoincrement())
   rg String  @unique
   name  String?
-  battalionId String @unique @map("battalion_id")
+  battalionId Int @unique @map("battalion_id")
 
   user    Battalions    @relation(fields: [battalionId], references: [id])
 }
 
 model Coint {
-  id        String     @id @default(uuid())
+  id        Int     @id @default(autoincrement())
   name String
   battalions Battalions[]
 }
 
 model Battalions {
-  id String @id @default(uuid())
+  id Int @id @default(autoincrement())
   name String 
-  cointId String @unique @map("coint_id")
+  vacancies Int
   effective Polices[]
 
   coint    Coint    @relation(fields: [cointId], references: [id])
+  cointId Int @map("coint_id")
 }

@@ -5,6 +5,5 @@ const cointRoutes = Router();
 
 
 cointRoutes.get('/', cointController.getAll);
-cointRoutes.post('/', cointController.create);
 
 export default cointRoutes;

@@ -1,13 +1,9 @@
 import { Request, Response } from 'express';
-import { SchedulesRepository } from '../repositories/Schedules.repository';
+import { CointRepository } from '../repositories/coints.repository';
 
 export default class SchedulesController {
     static async getAll(req: Request, res: Response): Promise<Response> {
-        const response = await SchedulesRepository.getAll()
-        return res.json(response)
-    }
-    static async create(req: Request, res: Response): Promise<Response> {
-        const response = await SchedulesRepository.create(req.body)
+        const response = await CointRepository.getAll()
         return res.json(response)
     }
 }
