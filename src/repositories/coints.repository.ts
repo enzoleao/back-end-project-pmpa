@@ -8,8 +8,12 @@ export class CointRepository {
                 battalions: {
                     orderBy: {
                         id: 'asc'
+                    },
+                    include: {
+                        effective: true
                     }
                 }
+                
             },
             orderBy: {
                 id: 'asc'

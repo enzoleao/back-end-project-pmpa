@@ -9,8 +9,11 @@ async function main() {
                 create: [
                     { name: 'GAB CMD', vacancies: 0},
                     { name: 'EMG', vacancies: 8 },
-                    { name: 'DGEC', vacancies: 2 },
-                    { name: 'DAL', vacancies: 2 },
+                    { name: 'DGEC', vacancies: 1 },
+                    { name: 'DAL', vacancies: 1 },
+                    { name: 'CMS/AMC', vacancies: 1 },
+                    { name: 'CMS/ODC', vacancies: 1 },
+                    { name: 'AJG/BANDA', vacancies: 1 },
                     { name: 'CI', vacancies: 1 }
                 ]
             }
@@ -26,7 +29,7 @@ async function main() {
                 create: [
                     { name: 'SEDE', vacancies: 0 },
                     { name: '1º BPM', vacancies: 2 },
-                    { name: '2º BPM', vacancies: 1 },
+                    { name: '2º BPM', vacancies: 0 },
                     { name: '20º BPM', vacancies: 2 },
                     { name: '27º BPM', vacancies: 1 },
                     { name: '28º BPM', vacancies: 1 },
@@ -80,7 +83,7 @@ async function main() {
             battalions: {
                 create: [
                     { name: 'SEDE', vacancies: 1 },
-                    { name: 'BPA', vacancies: 2 },
+                    { name: 'BPA', vacancies: 1 },
                     { name: 'CIPFLU', vacancies: 1 },
                     { name: '1ª CIPAMB', vacancies: 1 },
                 ]
@@ -101,8 +104,8 @@ async function main() {
                     { name: 'BPRV', vacancies: 0 },
                     { name: 'BPGDA', vacancies: 0 },
                     { name: 'BPTUR', vacancies: 1 },
-                    { name: '1º BPR', vacancies: 1 },
-                    { name: '2º BPR', vacancies: 1 },
+                    { name: '1º BPR', vacancies: 2 },
+                    { name: '2º BPR', vacancies: 2 },
                     { name: 'CIEPAS', vacancies: 1 },
                 ]
             }
@@ -160,9 +163,9 @@ async function main() {
             name: 'CPR II',
             battalions: {
                 create: [
-                    { name: 'SEDE', vacancies: 0 },
+                    { name: 'SEDE', vacancies: 1 },
                     { name: '34º BPM', vacancies: 0 },
-                    { name: '4º BPM', vacancies: 0 },
+                    { name: '4º BPM', vacancies: 2 },
                     { name: '11ª CIPM', vacancies: 0 },
                     { name: '24ª CIPM', vacancies: 0 },
                 ]
@@ -211,7 +214,7 @@ async function main() {
             name: 'CPR V',
             battalions: {
                 create: [
-                    { name: 'SEDE', vacancies: 1 },
+                    { name: 'SEDE', vacancies: 0 },
                     { name: '7º BPM', vacancies: 1 },
                     { name: '22º BPM', vacancies: 1 },
                     { name: '30ª CIPM', vacancies: 1 },
@@ -243,7 +246,7 @@ async function main() {
             battalions: {
                 create: [
                     { name: 'SEDE', vacancies: 0 },
-                    { name: '11º BPM', vacancies: 2 },
+                    { name: '11º BPM', vacancies: 1 },
                     { name: '33º BPM', vacancies: 1 },
                     { name: '44º BPM', vacancies: 2 },
                     { name: '10ª CIPM', vacancies: 1 },
@@ -331,8 +334,8 @@ async function main() {
             name: 'CPR XII',
             battalions: {
                 create: [
-                    { name: 'SEDE', vacancies: 2 },
-                    { name: '9º BPM', vacancies: 2 },
+                    { name: 'SEDE', vacancies: 1 },
+                    { name: '9º BPM', vacancies: 1 },
                     { name: '22ª CIPM', vacancies: 1 },
                     { name: '78º PEL', vacancies: 0 },
                     { name: '32ª CIPM', vacancies: 1 },
